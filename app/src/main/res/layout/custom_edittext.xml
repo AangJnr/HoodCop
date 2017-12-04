@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/spacing_normal"
+              android:layout_marginRight="@dimen/spacing_normal"
+              android:layout_marginTop="@dimen/spacing_normal"
+              android:orientation="vertical"
+    >
+
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter name"
+        android:padding="@dimen/spacing_normal"
+        android:textColor="@android:color/primary_text_dark"
+        android:background="@color/colorPrimary"
+
+        />
+
+
+    <EditText
+        android:id="@+id/name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_normal"
+        android:layout_marginBottom="@dimen/spacing_normal"
+         android:layout_marginTop="@dimen/spacing_normal"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:gravity="right"
+        >
+
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/spacing_normal"
+            android:text="CANCEL"
+            android:textColor="@color/colorAccent"
+
+            />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cancel"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/spacing_normal"
+            android:text="OK"
+            android:textColor="@color/colorAccent"
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>

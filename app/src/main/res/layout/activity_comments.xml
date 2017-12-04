@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:orientation="vertical"
+     >
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="false"
+        >
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:tint="@color/white"
+            android:padding="@dimen/spacing_normal"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            />
+
+
+
+        <TextView
+            android:id="@+id/actionBarText"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C o m m e n t s"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_below="@id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/comment_section"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="2dp"
+                android:layout_marginBottom="@dimen/spacing_half"
+                >
+
+                <RelativeLayout
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    >
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/layout_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/spacing_normal"
+
+                        >
+
+
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/postee_image_view"
+                            android:layout_width="@dimen/listview_icon_size"
+                            android:layout_height="@dimen/listview_icon_size"
+                            android:src="@drawable/place_holder"
+
+                            />
+
+
+
+                        <TextView
+                            android:id="@+id/posters_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/postee_image_view"
+                            android:layout_marginLeft="@dimen/spacing_normal"
+                            android:textColor="@android:color/primary_text_light"
+                            android:text="Aang Jnr"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/text_size_normal"
+                            style="@style/Base.TextAppearance.AppCompat.Title"
+                            android:layout_marginBottom="@dimen/spacing_quarter"
+                            />
+
+
+
+
+                        <LinearLayout
+                            android:id="@+id/lay2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/posters_name"
+                            android:layout_toRightOf="@id/postee_image_view"
+                            android:layout_marginLeft="@dimen/spacing_normal"
+
+
+                            >
+
+
+                            <TextView
+                                android:id="@+id/date_posted"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3 days ago"
+                                android:textAllCaps="false"
+                                android:textColor="@android:color/tertiary_text_light"
+                                android:textSize="@dimen/text_size_small"
+                                android:layout_gravity="center_vertical"
+                                android:transitionName="trex_company_name"
+
+                                />
+
+
+
+                            <View
+                                android:id="@+id/view1"
+                                android:layout_width="3dp"
+                                android:layout_height="3dp"
+                                android:background="@drawable/circle"
+                                android:layout_marginLeft="@dimen/spacing_half"
+                                android:layout_marginRight="@dimen/spacing_half"
+                                android:layout_gravity="center_vertical"
+
+                                />
+
+
+
+                            <TextView
+                                android:id="@+id/location"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ACCRA, GH"
+                                android:textSize="@dimen/text_size_small"
+                                android:textColor="@android:color/tertiary_text_light"
+                                android:layout_gravity="center_vertical"
+
+                                />
+
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+
+                            >
+
+                            <ImageView
+                                android:visibility="gone"
+                                android:id="@+id/starred"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/spacing_half"
+                                android:src="@drawable/ic_star_border_grey_400_18dp"
+                                android:clickable="true"
+                                />
+
+
+                            <TextView
+                                android:id="@+id/info"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/spacing_half"
+                                android:clickable="true"
+                                android:text="FOLLOW"
+                                style="@style/TextAppearance.AppCompat.Button"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/text_size_tiny"
+                                />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                    <View
+                        android:visibility="gone"
+                        android:id="@+id/view_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/divider"
+                        android:layout_below="@id/layout_1"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        />
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/messages_text_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view_1"
+                        android:padding="@dimen/spacing_normal"
+                        android:background="?attr/selectableItemBackground"
+                        >
+
+                        <TextView
+                            android:id="@+id/status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                             android:textColor="@color/text_black_87"
+                            android:ellipsize="end"
+                              />
+
+
+
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:layout_below="@id/status"
+                            android:id="@+id/selected_image"
+                            android:layout_width="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:layout_marginTop="@dimen/spacing_normal"
+                            android:layout_height="wrap_content"/>
+
+
+                    </RelativeLayout>
+
+
+
+
+
+                    <View
+                        android:id="@+id/view_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/divider"
+                        android:layout_below="@id/messages_text_layout"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:layout_marginLeft="@dimen/spacing_normal"
+                        android:layout_marginTop="@dimen/spacing_half"
+
+                        />
+
+
+                    <RelativeLayout
+                        android:id="@+id/layout_3"
+                        android:layout_below="@id/view_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/spacing_half"
+
+                        >
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/spacing_half"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical"
+
+                            >
+
+
+                            <TextView
+                                android:id="@+id/number_of_stars"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textSize="@dimen/text_size_tiny"
+                                />
+
+
+
+                            <ImageView
+                                android:id="@+id/star"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_star_border_grey_400_24dp"
+                                android:background="?selectableItemBackgroundBorderless"
+                                android:padding="@dimen/spacing_half"
+                                />
+
+
+
+                            <ImageView
+                                 android:id="@+id/share"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_share_grey_400_24dp"
+                                android:background="?selectableItemBackgroundBorderless"
+                                android:padding="@dimen/spacing_half"
+                                />
+
+                        </LinearLayout>
+
+
+
+
+
+                        <LinearLayout
+                            android:id="@+id/number_of_comments_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/spacing_half"
+                            android:background="?attr/selectableItemBackground"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/number_of_comments"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                 android:textSize="@dimen/text_size_tiny"
+                                android:layout_marginRight="@dimen/spacing_quarter"
+                                />
+
+                            <TextView
+                                android:id="@+id/textview2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                 android:textSize="@dimen/text_size_tiny"
+                                />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/comments_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/comment_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="5dp"
+        android:layout_alignParentBottom="true"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_normal"
+            >
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/place_holder"
+                android:layout_centerVertical="true"
+
+                />
+
+
+            <EditText
+                android:id="@+id/comment_edittext"
+                android:layout_toRightOf="@id/user_image"
+                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:padding="@dimen/spacing_normal"
+                android:layout_toLeftOf="@+id/post"
+                android:hint="Write something..."
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginRight="@dimen/spacing_normal"
+                android:layout_centerVertical="true"
+
+                />
+
+
+
+            <TextView
+                android:id="@+id/post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POST"
+                android:layout_alignParentRight="true"
+                style="@style/TextAppearance.AppCompat.Button"
+                android:textSize="@dimen/text_size_tiny"
+                 android:layout_centerVertical="true"
+                android:padding="@dimen/spacing_half"
+                android:enabled="false"
+                android:background="?attr/selectableItemBackground"
+                />
+
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                style="?android:attr/progressBarStyleSmall"
+                />
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

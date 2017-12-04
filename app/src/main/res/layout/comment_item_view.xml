@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+<RelativeLayout
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacing_normal"
+>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/commenters_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/place_holder"
+        android:layout_centerVertical="true"
+
+        />
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll1"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/commenters_image"
+        android:layout_marginLeft="@dimen/spacing_normal"
+
+        >
+
+
+
+
+        <TextView
+            android:id="@+id/commenters_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aang Jnr"
+            android:textColor="@color/text_black_87"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is my comment. I have commented on this awesome post and I will continue to ya know!"
+            android:textSize="@dimen/text_size_tiny"
+            android:layout_marginTop="@dimen/spacing_half"
+            />
+
+
+        <TextView
+            android:id="@+id/comment_stars_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:gravity="center"
+            android:drawableRight="@drawable/ic_star_yellow_a700_18dp"
+             android:textSize="@dimen/text_size_tiny"
+            android:layout_marginTop="@dimen/spacing_quarter"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/date_posted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="moments ago"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/text_size_tiny"
+         />
+
+
+
+
+</RelativeLayout>
+    <View
+         android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+          android:background="@color/divider"/>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+        <item name="android:buttonStyle">@style/PrimaryButton</item>
+
+
+    </style>
+
+
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="textColorPrimary">@color/textColorPrimaryLight</item>
+        <item name="textColorSecondary">@color/textColorSecondaryLight</item>
+        <item name="textColorTertiary">@color/textColorTertiaryLight</item>
+        <item name="android:textColorPrimaryInverse">@color/textColorPrimaryLightInverted</item>
+        <item name="textColorSecondaryInverse">@color/textColorSecondaryLightInverted</item>
+        <item name="backgroundColor">@color/colorPrimary</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="bottomSheetBackgroundColor">@color/bottom_sheet_light</item>
+        <item name="fab_label_background_color">@color/fab_label_background_color_light</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="preferenceTheme">@style/AppPreferenceTheme</item>
+        <item name="alertDialogTheme">@style/AppAlertDialogDark</item>
+
+
+    </style>
+
+
+    <style name="SpinnerStyle" parent="Widget.AppCompat.Spinner">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+        <item name="android:textColor">@color/white</item>
+
+
+    </style>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="150dp"
+               android:padding="@dimen/widgetmargin"
+              android:layout_height="50dp">
+
+    <LinearLayout
+        android:id="@+id/policeLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="@dimen/spacing_half"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/police"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/police_plain"
+            android:clickable="true"
+            android:focusable="true"
+             />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/fireServiceLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="@dimen/spacing_half"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/fire_service"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/fire_service_plain"
+             />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ambulanceLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="@dimen/spacing_half"
+        >
+
+
+        <ImageView
+            android:id="@+id/ambulance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ambulance_plain"
+            android:clickable="true"
+             android:focusable="true"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

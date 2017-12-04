@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+<!--
+    <color name="accent">#ff477dd6</color>
+-->
+
+    <color name="background_1">#5523ca</color>
+    <color name="background_2">#7029e1</color>
+    <color name="background_3">#7e30f2</color>
+
+
+    <color name="accent">#2979ff</color>
+
+
+    <!--Accent-->
+    <color name="button">#ff477dd6</color>
+    <!--Buttons-->
+    <color name="button_text">#ffffffff</color>
+    <!--Buttons text-->
+
+    <color name="accent_dark">#3763ac</color>
+    <!--Status Bar-->
+    <color name="ab_color">#ff3f6bb5</color>
+    <color name="ab_color_dark">#2f5799</color>
+
+    <!--Action Bar-->
+    <color name="navigation_bar">#ff000000</color>
+    <!--Navigation Bar-->
+    <color name="settings_side_icons">#ff202e39</color>
+    <!--Side icons-->
+    <color name="bg_dark">#ff151618</color>
+
+    <color name="colorPrimary">@color/background_3</color>
+    <color name="colorPrimaryDark">@color/background_2</color>
+    <color name="colorAccent">@color/accent</color>
+
+
+
+
+    //Others
+
+    <color name="grey">#d9d9d9</color>
+    <color name="divider_2">#afafaf</color>
+    <color name="translucent">#cc000000</color>
+    <color name="steel">#778da9</color>
+    <color name="composite">#13917a</color>
+    <color name="cpb_red">#ea2f35</color>
+    <color name="editText_base_color">#707070</color>
+    <color name="editText_primaryColor">#27b780</color>
+    <color name="editText_error_color">#cf4149</color>
+    <color name="text_color_grey">#555b55</color>
+    <color name="gradient_color_2">#A43141</color>
+    <color name="gradient_color_1">#73314A</color>
+    <color name="gradient_color_3">#94314A</color>
+    <color name="bottom_sheet_light">#ebeef0</color>
+    <color name="bottom_sheet_dark">#2e2e2e</color>
+
+
+
+     <color name="colorAccentDark">#060606</color>
+     <color name="statusNormal">@color/divider</color>
+    <color name="statusPending">@color/fab_color</color>
+    <color name="statusCaution">#ea3838</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="tab_text_selected">@color/colorAccent</color>
+    <color name="fab_pressed">#00E676</color>
+    <color name="fab_color">@color/colorAccent</color>
+    <color name="fab_mini_buttons">#898989</color>
+    <color name="tab_text">#c2ededed</color>
+    <color name="text_color">#ffffff</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="login_tab_text">#ff313131</color>
+    <color name="login_screen_statusbar_color">@color/colorPrimaryDark</color>
+    <color name="edittext_error_color">#cf4149</color>
+    <color name="yellow_bar_disabled">#9f9f9f</color>
+    <color name="material_icon_colors">#9E9E9E</color>
+    <color name="divider">#dad9d9d9</color>
+    <color name="background_card">#fff</color>
+    <color name="background_snackbar">#323232</color>
+    <color name="text_black_87">#d0000000</color>
+    <color name="text_white_87">#deFFFFFF</color>
+    <color name="text_white_75">#87ececec</color>
+    <color name="drawable_grey">#555b55</color>
+    <color name="viewBg">#f1f5f8</color>
+    <color name="customButtonNormal">#00ececec</color>
+    <color name="customButtonPressed">#5acacaca</color>
+    <color name="customButtonFocused">#3ea1a1a1</color>
+    <color name="actionbar_opacity">#00000000</color>
+    <color name="color_slide_intro">#fdfdfd</color>
+    <color name="color_dark_slide_intro">#ebeef0</color>
+
+    <color name="backgroundGrey">#16181a</color>
+
+
+    <color name="green_indicator">#48e487</color>
+
+    <color name="red_indicator">@color/cpb_red</color>
+
+
+
+
+
+
+    //Light Colors
+
+    <color name="fabStatePressed">#732031</color>
+    <color name="textColorPrimaryLight">#000</color>
+    <color name="textColorSecondaryLight">#363636</color>
+    <color name="textColorTertiaryLight">#787878</color>
+    <color name="fab_label_background_color_light">#d1d1d1</color>
+
+
+
+
+
+
+    //Inverted colors
+    <color name="colorPrimaryInverted">#24272b</color>
+    <color name="colorPrimaryDarkInverted">#24272b</color>
+
+    <color name="textColorPrimaryLightInverted">#fff</color>
+    <color name="textColorSecondaryLightInverted">#bebebe</color>
+    <color name="textColorTertiaryLightInverted">#808080</color>
+    <color name="fab_label_background_color_dark">#4e4e4e</color>
+
+
+    <color name="background">#fafafa</color>
+
+
+
+
+    <color name="rookie">#9288c9</color>
+    <color name="padwan">#9bc53d</color>
+    <color name="officer">#3b9aee</color>
+    <color name="vigilante">#f4a261</color>
+    <color name="superhero">#fc6177</color>
+
+
+
+    <color name="police">#2b72dc</color>
+    <color name="fireservice">#e6514c</color>
+    <color name="ambulance">#46de7e</color>
+
+
+</resources>

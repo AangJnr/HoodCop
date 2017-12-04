@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#efefef"
+    >
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            >
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="2dp"
+                android:layout_marginBottom="@dimen/spacing_half"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+
+                    <View
+                        android:id="@+id/background"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gradient_background"
+                        />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="?attr/actionBarSize"
+                    android:padding="@dimen/spacing_normal"
+
+                     >
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/user_image"
+                        android:layout_width="@dimen/image_size_small"
+                        android:layout_height="@dimen/image_size_small"
+                        android:src="@drawable/place_holder"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="2dp"
+                        android:scaleType="centerCrop"
+                        android:layout_centerHorizontal="true"
+
+                        />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll1"
+                         android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/user_image"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/spacing_normal"
+                        android:gravity="center"
+
+                        >
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            >
+
+
+
+                            <TextView
+                                android:id="@+id/name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Aang Jnr"
+                                android:textColor="@android:color/primary_text_light"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                style="@style/TextAppearance.AppCompat.Large"
+                                />
+
+
+                            <TextView
+                                android:padding="@dimen/spacing_quarter"
+                                android:id="@+id/rank"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rookie"
+                                android:background="@drawable/button_background"
+                                android:textColor="@color/white"
+                                android:layout_marginLeft="@dimen/spacing_half"
+                                android:gravity="center"
+                                   />
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/tagline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                             android:gravity="center"
+                            android:text="Never Take a day off!"
+                            android:layout_marginTop="@dimen/spacing_half"
+                            android:maxLength="150"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="1dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:text="My Posts"
+                    android:padding="@dimen/spacing_half"
+                    android:textColor="@color/divider_2"
+                     android:layout_marginLeft="@dimen/spacing_half"
+
+                    />
+
+                <include layout="@layout/divider_item_horizontal"/>
+
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#efefef"
+                        android:layout_marginTop="@dimen/spacing_quarter"
+                        >
+
+
+
+                    </android.support.v7.widget.RecyclerView>
+
+
+
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+         android:fitsSystemWindows="false"
+        >
+
+
+
+        <ImageView
+            android:id="@+id/edit_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit_black_24dp"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/spacing_normal"
+            android:visibility="gone"
+            android:tint="@color/white"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:tint="@color/white"
+            android:padding="@dimen/spacing_normal"
+            android:visibility="gone"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            />
+
+
+
+        <TextView
+            android:id="@+id/actionBarText"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentFrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_margin="@dimen/spacing_normal"
+        app:layout_heightPercent="60%"
+        android:transitionName="whatsNewLayout"
+        >
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_normal"
+            android:gravity="center_vertical"
+            >
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/place_holder"
+                android:layout_marginRight="@dimen/spacing_normal"
+                android:transitionName="whatsNewCiv"
+
+                />
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AangJnr"
+                android:textStyle="bold"
+                android:textColor="@android:color/primary_text_light"
+
+                />
+
+        </LinearLayout>
+
+
+            <Button
+                android:id="@+id/postButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/spacing_normal"
+                android:background="@drawable/rounded_button"
+                android:clickable="true"
+                android:focusable="true"
+                android:hapticFeedbackEnabled="true"
+                android:text="Post"
+                android:theme="@style/AccentButtonRound"
+
+
+                />
+
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/spacing_normal"
+                 />
+
+        </RelativeLayout>
+
+
+
+
+        <ScrollView
+            android:id="@+id/sv1"
+            android:layout_below="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/imageRl"
+
+            >
+
+
+            <EditText
+                android:id="@+id/status_edittext"
+                android:padding="@dimen/spacing_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:hint="Write something..."
+                android:textSize="@dimen/text_size_small"
+                />
+
+
+        </ScrollView>
+
+
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/imageRl"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_above="@+id/rl2"
+            android:layout_marginTop="@dimen/spacing_normal"
+
+            >
+
+            <ImageView
+                android:id="@+id/selectedImage"
+                android:layout_width="match_parent"
+                android:src="@drawable/place_holder"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent">
+
+
+            </ImageView>
+
+
+
+            <ImageView
+                android:id="@+id/removeImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_half"
+                 android:layout_alignParentRight="true"
+                android:src="@drawable/ic_cancel_white_18dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/spacing_normal"
+            >
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:id="@+id/ll2"
+             android:orientation="horizontal"
+            android:padding="@dimen/spacing_normal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/spacing_half"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            >
+
+
+            <ImageView
+                android:id="@+id/locationImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_user_location_24"
+                android:tint="@android:color/tertiary_text_dark"
+
+                />
+
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small"
+                android:text="Add a location"
+                android:layout_marginLeft="@dimen/spacing_half"
+                android:tint="@android:color/tertiary_text_dark"
+
+
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/showimageGallery"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_normal"
+                android:src="@drawable/ic_menu_camera"
+                android:tint="@android:color/tertiary_text_dark"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    </android.support.percent.PercentFrameLayout>

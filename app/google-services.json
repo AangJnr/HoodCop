@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "897372771609",
+    "firebase_url": "https://hoodcop-65624.firebaseio.com",
+    "project_id": "hoodcop-65624",
+    "storage_bucket": "hoodcop-65624.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:897372771609:android:0b5e2352b925a29a",
+        "android_client_info": {
+          "package_name": "com.piemicrosystems.hoodcop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "897372771609-gqbl8onnpcotknqqe9f0rtu93njhljml.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.piemicrosystems.hoodcop",
+            "certificate_hash": "22e1a87e98f48726b6af1ebea32ca6f7570793c4"
+          }
+        },
+        {
+          "client_id": "897372771609-qeg2li8dibvr5o6jd14vtc161gjq7asd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1o9AG7KykFFprVmWB4qz1gZHYUxvPEsY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "897372771609-qeg2li8dibvr5o6jd14vtc161gjq7asd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

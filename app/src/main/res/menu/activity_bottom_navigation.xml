@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/my_profile"
+        android:icon="@drawable/ic_action_user_24"
+        android:title="@string/profile"/>
+
+
+    <item
+        android:id="@+id/feed"
+        android:icon="@drawable/ic_list_white_24dp"
+        android:title="@string/feed"/>
+
+
+    <item
+        android:id="@+id/chats"
+        android:icon="@drawable/ic_message_white_24dp"
+        android:title="@string/chats"/>
+
+
+</menu>

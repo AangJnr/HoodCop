@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/actions"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentStart="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+         android:padding="@dimen/spacing_half"
+        >
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:src="@drawable/ic_menu_camera"
+             android:tint="@android:color/tertiary_text_dark"
+            android:padding="@dimen/spacing_half"
+            android:clickable="true"
+             android:background="?attr/selectableItemBackgroundBorderless"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_photo_library_black_24dp"
+            android:tint="@android:color/tertiary_text_dark"
+            android:padding="@dimen/spacing_half"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+
+            />
+
+    </LinearLayout>
+
+
+    <include layout="@layout/divider_item_horizontal"/>
+
+    <com.jess.ui.TwoWayGridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:layout_marginBottom="@dimen/spacing_normal"
+        android:layout_marginLeft="@dimen/spacing_half"
+        android:background="@color/white"
+        app:cacheColorHint="#E8E8E8"
+        app:columnWidth="120dp"
+        app:gravity="center"
+        app:horizontalSpacing="@dimen/spacing_half"
+        app:numColumns="auto_fit"
+        app:numRows="auto_fit"
+        app:rowHeight="100dp"
+        app:scrollDirectionLandscape="horizontal"
+        app:scrollDirectionPortrait="horizontal"
+        app:stretchMode="spacingWidthUniform"
+        app:verticalSpacing="@dimen/spacing_half"/>
+
+
+
+</LinearLayout>
